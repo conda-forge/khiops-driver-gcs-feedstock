@@ -31,10 +31,10 @@ requirements:
 
 tests:
   - script:
-    - if: unix
-      then: test -f $PREFIX/lib/libkhiopsdriver_file_gcs${SHLIB_EXT}
-      else: 
-        - if not exist %PREFIX%\lib\libkhiopsdriver_file_gcs.dll exit 1 
+      - if: unix
+        then: test -f $PREFIX/lib/libkhiopsdriver_file_gcs${SHLIB_EXT}
+        else:
+          - if not exist %PREFIX%\lib\libkhiopsdriver_file_gcs.dll exit 1
 
 about:
   homepage: https://khiops.org
