@@ -8,4 +8,4 @@ REM Build
 cmake --build builds\conda --parallel --target khiopsdriver_file_gcs
 
 REM Copy the lib for the driver package
-cmake --install builds\conda --prefix %PREFIX%
+cmake --install builds\conda --prefix %PREFIX%\Library
