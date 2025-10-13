@@ -7,7 +7,7 @@ channel_targets:
 cxx_compiler:
 - vs2022
 fmt:
-- '11.2'
+- '12.0'
 libboost_devel:
 - '1.86'
 libboost_headers:
@@ -19,7 +19,7 @@ libcurl:
 libgoogle_cloud_storage_devel:
 - '2.39'
 spdlog:
-- '1.15'
+- '1.16'
 target_platform:
 - win-64
 zlib:
