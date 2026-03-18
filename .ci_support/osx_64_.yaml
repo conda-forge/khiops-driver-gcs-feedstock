@@ -1,11 +1,11 @@
 MACOSX_DEPLOYMENT_TARGET:
-- '10.13'
+- '11.0'
 MACOSX_SDK_VERSION:
-- '10.13'
+- '11.0'
 c_stdlib:
 - macosx_deployment_target
 c_stdlib_version:
-- '10.13'
+- '11.0'
 channel_sources:
 - conda-forge
 channel_targets:
@@ -15,7 +15,7 @@ cxx_compiler:
 cxx_compiler_version:
 - '19'
 fmt:
-- '11.2'
+- '12.0'
 libboost_devel:
 - '1.86'
 libboost_headers:
@@ -23,11 +23,11 @@ libboost_headers:
 libcrc32c:
 - '1.1'
 libgoogle_cloud_storage_devel:
-- '2.39'
+- '3.3'
 macos_machine:
 - x86_64-apple-darwin13.4.0
 spdlog:
-- '1.15'
+- '1.16'
 target_platform:
 - osx-64
 zlib:
