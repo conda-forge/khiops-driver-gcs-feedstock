@@ -9,15 +9,13 @@ cxx_compiler:
 fmt:
 - '12.1'
 libboost_devel:
-- '1.86'
+- '1.88'
 libboost_headers:
-- '1.86'
+- '1.88'
 libcrc32c:
 - '1.1'
 libcurl:
 - '8'
-libgoogle_cloud_storage_devel:
-- '3.3'
 spdlog:
 - '1.17'
 target_platform:

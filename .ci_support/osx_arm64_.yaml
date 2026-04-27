@@ -17,13 +17,11 @@ cxx_compiler_version:
 fmt:
 - '12.1'
 libboost_devel:
-- '1.86'
+- '1.88'
 libboost_headers:
-- '1.86'
+- '1.88'
 libcrc32c:
 - '1.1'
-libgoogle_cloud_storage_devel:
-- '3.3'
 macos_machine:
 - arm64-apple-darwin20.0.0
 spdlog:
