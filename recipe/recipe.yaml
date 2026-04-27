@@ -1,5 +1,5 @@
 context:
-  version: "0.0.16"
+  version: "0.0.17"
 
 package:
   name: khiops-driver-gcs
@@ -7,9 +7,9 @@ package:
 
 source:
   - url: https://github.com/KhiopsML/khiopsdriver-gcs/archive/refs/tags/${{ version }}.tar.gz
-    sha256: 5777f6a352c2c391005e85a8a0444f235c3c7583c781ca5491e1101116ca807d
-  - url: https://github.com/KhiopsML/khiopsdriver-shared/archive/e010334b360b2ca1fc40de31f7d7b52cf4756581.tar.gz
-    sha256: 7ac8fcef72769a268a68eeec78ae5831a727619ba009d3879bcb27545e9c7e2d
+    sha256: 21eec1559ebe99c7c503cf52c1cf4ba264e9a5c06d683794dda14f968cfeb585
+  - url: https://github.com/KhiopsML/khiopsdriver-shared/archive/ab7944134613199cd9112e5b6a6801c3257d5168.tar.gz
+    sha256: 883482ba7f500130062fb0aa5fe955c2120ab5c9578cbb71c647fa11e6db9719
     target_directory: shared
 
 build:
