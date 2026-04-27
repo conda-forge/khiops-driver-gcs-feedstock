@@ -1,13 +1,16 @@
 context:
-  version: "0.0.15"
+  version: "0.0.16"
 
 package:
   name: khiops-driver-gcs
   version: ${{ version }}
 
 source:
-  url: https://github.com/KhiopsML/khiopsdriver-gcs/archive/refs/tags/${{ version }}.tar.gz
-  sha256: 0e293a84c3c6000e305218f41dd16c8cee2af6c79e2a873e494cda09744738a7
+  - url: https://github.com/KhiopsML/khiopsdriver-gcs/archive/refs/tags/${{ version }}.tar.gz
+    sha256: 5777f6a352c2c391005e85a8a0444f235c3c7583c781ca5491e1101116ca807d
+  - url: https://github.com/KhiopsML/khiopsdriver-shared/archive/e010334b360b2ca1fc40de31f7d7b52cf4756581.tar.gz
+    sha256: 7ac8fcef72769a268a68eeec78ae5831a727619ba009d3879bcb27545e9c7e2d
+    target_directory: shared
 
 build:
   number: 0
@@ -22,7 +25,7 @@ requirements:
     - fmt
     - spdlog
     - zlib
-    - libgoogle-cloud-storage-devel
+    - libgoogle-cloud-storage-devel<=2.37
     - libboost-devel
     - libboost-headers
     - libcrc32c
