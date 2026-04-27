@@ -25,7 +25,7 @@ requirements:
     - fmt
     - spdlog
     - zlib
-    - libgoogle-cloud-storage-devel<=2.37
+    - libgoogle-cloud-storage-devel <=2.37
     - libboost-devel
     - libboost-headers
     - libcrc32c
