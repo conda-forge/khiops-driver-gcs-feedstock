@@ -1,5 +1,5 @@
 context:
-  version: "0.0.17"
+  version: "0.0.21"
 
 package:
   name: khiops-driver-gcs
@@ -7,7 +7,7 @@ package:
 
 source:
   - url: https://github.com/KhiopsML/khiopsdriver-gcs/archive/refs/tags/${{ version }}.tar.gz
-    sha256: 21eec1559ebe99c7c503cf52c1cf4ba264e9a5c06d683794dda14f968cfeb585
+    sha256: 28d4bd6bd46061efe255fc33e6afb753e193e54452a08cfc09d9ce3d14688e4d
   - url: https://github.com/KhiopsML/khiopsdriver-shared/archive/ab7944134613199cd9112e5b6a6801c3257d5168.tar.gz
     sha256: 883482ba7f500130062fb0aa5fe955c2120ab5c9578cbb71c647fa11e6db9719
     target_directory: shared
@@ -34,10 +34,10 @@ requirements:
 
 tests:
   - script:
-    - if: unix
-      then: test -f $PREFIX/lib/libkhiopsdriver_file_gcs${SHLIB_EXT}
-      else: 
-        - if not exist %PREFIX%\Library\bin\libkhiopsdriver_file_gcs.dll exit 1 
+      - if: unix
+        then: test -f $PREFIX/lib/libkhiopsdriver_file_gcs${SHLIB_EXT}
+        else:
+          - if not exist %PREFIX%\Library\bin\libkhiopsdriver_file_gcs.dll exit 1
 
 about:
   homepage: https://khiops.org
